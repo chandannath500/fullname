@@ -23,8 +23,6 @@ export default function App() {
         ...prevData,
         submittedFirstName: prevData.firstName,
         submittedLastName: prevData.lastName,
-        firstName: "",
-        lastName: "",
       }));
     }
   };
