@@ -29,8 +29,6 @@ export default function App() {
     }
   };
 
-  const isSubmitDisabled = !data.firstName || !data.lastName;
-
   return (
     <div className="App">
       <h1>Full Name Display</h1>
@@ -55,9 +53,7 @@ export default function App() {
           />
         </label>
         <br />
-        <button type="submit" disabled={isSubmitDisabled}>
-          Submit
-        </button>
+        <button type="submit">Submit</button>
       </form>
       {data.submittedFirstName && data.submittedLastName && (
         <p>{`Full Name: ${data.submittedFirstName} ${data.submittedLastName}`}</p>
